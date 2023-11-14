@@ -1,0 +1,39 @@
+body{
+    background-image: url("../img/image\ \(1\).png");
+    background-size: cover;
+}
+h1 {
+    font-size: 24px; /* Endre størrelsen på overskriften */
+    color: #f604e5;    /* Endre tekstfargen */
+    font-family: Arial, sans-serif; /* Endre fonten */
+    font-weight: bold; /* Gjør teksten fet */
+    text-align: center; /* Senter teksten (valgfritt) */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.game-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+#pc-status {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

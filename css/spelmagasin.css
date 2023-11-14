@@ -1,0 +1,69 @@
+body{
+    background-image: url("../img/image.png");
+    background-size: cover;
+}
+h1 {
+    font-size: 24px; /* Endre størrelsen på overskriften */
+    color: #f604e5;    /* Endre tekstfargen */
+    font-family: Arial, sans-serif; /* Endre fonten */
+    font-weight: bold; /* Gjør teksten fet */
+    text-align: center; /* Senter teksten (valgfritt) */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.topnav {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 260px;
+
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
