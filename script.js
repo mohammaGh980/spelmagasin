@@ -5,7 +5,7 @@ function checkGuess() {
     let guess = document.getElementById("guess").value;
 
     if (guess === "") {
-        alert("Please enter a number!");
+        alert("Please enter a number to hack this pc!");
         return;
     }
 
@@ -20,7 +20,7 @@ function checkGuess() {
 
     if (guess === targetNumber) {
         document.getElementById("status").innerText = `Hacked in ${attempts} attempts!`;
-        document.getElementById("status").style.color = "#4CAF50"; // Green color for success
+        document.getElementById("status").style.color = "#000000"; // Green color for success
         document.getElementById("guess").disabled = true;
     } else {
         let message = guess < targetNumber ? "Too low. Try a higher number!" : "Too high. Try a lower number!";
@@ -28,3 +28,8 @@ function checkGuess() {
         document.getElementById("status").style.color = "#000000"; // Red color for failure
     }
 }
+function goToHome() {
+    //dett er pil som går tilpake i Hac my pc html
+    window.location.href = "spelmagasin.html";
+}
+

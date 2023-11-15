@@ -7,14 +7,18 @@
     <title>Hack my pc</title>
 </head>
 <body>
-    <h1>Hack my pc</h1>
-    <div class="game-container">
-        <img src="img/download.jpeg">
-        <div id="pc-status">PC Status: <span id="status">Not hacked</span></div>
-        <label for="guess">Guess a number (1-100): </label>
-        <input type="number" id="guess" min="1" max="100">
-        <button onclick="checkGuess()">Hack!</button>
-    </div>
+    <header>
+        <a href="spelmagasin.html"><h1>PCGameHub</h1></a>
+        <div class="game-container">
+            <h2>Hack my PC</h2>
+            <img src="img/download.jpeg">
+            <div id="pc-status">PC Status: <span id="status">Not hacked</span></div>
+            <label for="guess">Guess a number (1-100): </label>
+            <input type="number" id="guess" min="1" max="100">
+            <button onclick="checkGuess()">Hack!</button>
+        </div>
+        <button class="back-button" onclick="goToHome()">&#8592;</button>
+    </header>
     <script src="script.js"></script>
 </body>
 </html>

@@ -3,16 +3,23 @@ body{
     background-size: cover;
 }
 h1 {
-    font-size: 24px; /* Endre størrelsen på overskriften */
+    font-size: 30px; /* Endre størrelsen på overskriften */
     color: #f604e5;    /* Endre tekstfargen */
     font-family: Arial, sans-serif; /* Endre fonten */
     font-weight: bold; /* Gjør teksten fet */
-    text-align: center; /* Senter teksten (valgfritt) */
+    text-align: center; /* Senter teksten*/
+}
+h2{
+    font-size: 25px;
+    color: #000000;    
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    text-align: center;
 }
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    margin: 50px;
+    margin: 0;
 }
 
 .game-container {
@@ -28,12 +35,25 @@ body {
     font-weight: bold;
 }
 
-button {
+.back-button {
+    background-color: #a642ba;
+    color: #fff;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+}
+
+.back-button:hover {
+    background-color: #7e5393;
+}
+header a {
+    text-decoration: none; /* Fjern understrekning */
+    color: inherit; /* Behold fargen fra foreldreelementet (header) */
 }
 
