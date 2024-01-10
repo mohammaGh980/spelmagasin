@@ -1,0 +1,202 @@
+body {
+    margin: 20px 0 0; /* Legger til 20px avstand øverst */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/image.png'); /* Legg til banen til ditt bakgrunnsbilde */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Juster gjennomsiktigheten etter ønske */
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f604e5;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.topnav {
+    background-color: rgba(51, 51, 51, 0.8); /* Juster gjennomsiktigheten etter ønske */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.search {
+    position: relative; /* Endret til relative for å være referanse for #searchResult */
+}
+
+.search input {
+    padding: 5px;
+    width: 200px;
+}
+
+#searchResult {
+    position: absolute;
+    top: 100%; /* Plasserer søkeresultatene rett under søkefeltet */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Skjuler søkeresultatene som standard */
+}
+
+#searchResult a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0c0c0c;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+#searchResult a:hover {
+    background-color: #f9f9f9;
+}
+
+/* Vis søkeresultatene når det er innhold i resultContainer */
+#searchResult:not(:empty) {
+    display: block;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 1px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* dette er for å fjerne strekken under øveskriften(h1) */
+}
+
+.text-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 900px;
+}
+.back-button {
+    background-color: #d911eb;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.back-button:hover {
+    background-color: #d911eb;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#comments-container {
+    margin-bottom: 20px;
+}
+
+#comment-form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.comments {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #d911eb;
+    border-radius: 5px;
+  }
+  
+  .comments input,
+  .comments textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .comments button {
+    padding: 10px 20px;
+    background-color:  #d911eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment {
+    margin: 10px 0;
+    padding: 5px;
+    background-color:  #f4adfb;
+    border-radius: 5px;
+    border: 1px solid  #d911eb; /* Legg til en solid ramme rundt kommentaren */
+  }
+

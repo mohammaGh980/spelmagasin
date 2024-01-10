@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/hackmypc.css">
+    <link rel="stylesheet" href="css/hackmypc.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <title>Hack my pc</title>
 </head>
+
 <body>
+    <audio id="backgroundAudio" loop autoplay>
+        <source src="img/HNYTKJ6-the-hacker.mp3" type="audio/mp3">
+    </audio>
+    <button id="muteButton" onclick="toggleMute()"><i class="bi bi-volume-up"></i></button>
     <header>
-        <a href="spelmagasin.html"><h1>PCGameHub</h1></a>
+        <a href="spelmagasin.html">
+            <h1>PCGameHub</h1>
+        </a>
         <div class="game-container">
             <h2>Hack my PC</h2>
             <img src="img/download.jpeg">
@@ -21,4 +30,5 @@
     </header>
     <script src="script.js"></script>
 </body>
+
 </html>

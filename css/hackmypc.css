@@ -1,59 +1,79 @@
-body{
-    background-image: url("../img/image\ \(1\).png");
-    background-size: cover;
-}
-h1 {
-    font-size: 30px; /* Endre størrelsen på overskriften */
-    color: #f604e5;    /* Endre tekstfargen */
-    font-family: Arial, sans-serif; /* Endre fonten */
-    font-weight: bold; /* Gjør teksten fet */
-    text-align: center; /* Senter teksten*/
-}
-h2{
-    font-size: 25px;
-    color: #000000;    
-    font-family: Arial, sans-serif; 
-    font-weight: bold;
-    text-align: center;
-}
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/image\ \(1\).png'); 
+    background-size: cover;
+    background-position: center;
 }
 
-.game-container {
-    max-width: 400px;
-    margin: 0 auto;
+header {
+    background-color: rgba(27, 26, 26, 0.8); /* Juster gjennomsiktigheten */
+    color: #fff;
     padding: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
+    text-align: center;
 }
 
-#pc-status {
-    margin-bottom: 20px;
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #f604e5;
+    font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
-.back-button {
-    background-color: #a642ba;
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.image-box {
+    text-align: center;
+    margin: 10px; /*avstand mellom bildene */
+}
+
+.image-box img {
+    width: 200px; /* Juster bredden */
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-size: 14px;
     color: #fff;
-    padding: 10px;
+}
+.back-button {
+    background-color: #d911eb;
+    color: #fff;
+    padding: 15px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     position: fixed;
     top: 0;
     left: 0;
-    margin: 15px;
 }
 
 .back-button:hover {
-    background-color: #7e5393;
+    background-color: #d911eb;
 }
-header a {
-    text-decoration: none; /* Fjern understrekning */
-    color: inherit; /* Behold fargen fra foreldreelementet (header) */
+a {
+    text-decoration: none;
+    color: inherit; /* Behold fargen fra foreldreelementet (h1) */
 }
-
+#muteButton {
+    background-color: #f604e5;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<body>
+    <header>
+        <a href="spelmagasin.html">
+            <h1>PCGameHub</h1>
+        </a>
+        <nav class="topnav">
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search for games" oninput="searchGames()">
+                <!-- Ingen "Search" -knapp nødvendig, søkeresultatene vises mens du skriver -->
+                <!-- Viser søkeresultatene på siden -->
+                <div id="searchResult"></div>
+            </div>
+
+            <a href="spelmagasin.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">All games</button>
+                <div class="dropdown-content">
+                    <a href="hackmypc.html">Hack my pc</a>
+                    <a href="progproquiz.html">ProgProQuiz</a>
+                    <a href="#">Game 3</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+        </nav>
+        <button class="back-button" onclick="goToHome()">&#8592;</button>
+    </header>
+    <div class="text-box">
+        <h2>Welcome to PCGameHub</h2>
+        <p>Welcome to PCGameHub, a website dedicated to games and programming! Here you will find two exciting games
+            that will challenge your brain and provide you with hours of entertainment.</p>
+        <h2>Hackmypc</h2>
+        <p>Hackmypc is a game where you
+            have to guess a number between one and one hundred to hack a computer. The more guesses you use, the lower
+            your score will be. This game is perfect for those who like to solve puzzles and challenge themselves.</p>
+        <h2>ProgProQuiz</h2>
+        <p>ProgProQuiz is a game that tests your knowledge of programming, especially HTML and CSS. Here you will be
+            challenged with simple questions about coding and see how much you know about this exciting field.</p>
+        <p>In the future, we will add more games and programming projects, so stay updated on our website to see what's
+            coming!</p>
+        <h2>Guess the Color Code: Boost Your Programming Skills!</h2>
+        <p>Guess the Color Code is not just a fun game—it's also a sneaky way to become a coding wizard! As you decode
+            the secret color numbers, you're actually practicing the kind of coding used in programming. Each color has
+            its own special code, like #FF0000 for red. So, while you're having a blast with colors, you're also
+            secretly getting better at programming! It's a cool way to level up your skills without even realizing it.
+            Dive into Guess the Color Code, enjoy the game, and watch your programming prowess grow! 🎨💻</p>
+        <h2>Who made this website?</h2>
+        <p>The website was created by Mohammad, an IT student who wanted to share his passion for games and
+            programming with the world. We hope you will enjoy playing our games and learning more about programming at
+            the same time.</p>
+        <div class="comments">
+            <h3>What do you think of the different games?</h3>
+            <input type="text" id="name" placeholder="Name (optional)">
+            <textarea id="comment" placeholder="Write your comment here"></textarea>
+            <button onclick="addComment()">add comment</button>
+            <div id="commentSection"></div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script3.js"></script>
+</body>
+
+</html>

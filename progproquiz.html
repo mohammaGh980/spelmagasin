@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/proprogquiz.css">
+  <title>ProgProQuiz</title>
+</head>
+
+<body>
+  <audio id="backgroundAudio" loop autoplay>
+    <source src="img/XPT5HRY-video-game.mp3" type="audio/mp3">
+  </audio>
+  <div id="quiz-container">
+    <a href="spelmagasin.html">
+      <h1>PCGameHub</h1>
+    </a>
+    <h2>ProgProQuiz</h2>
+    <div id="quiz">
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="submit">Submit</button>
+    </div>
+    <div id="result"></div>
+    <button id="restart" class="hide">Start Over</button>
+  </div>
+  <button class="back-button" onclick="goToHome()">&#8592;</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
