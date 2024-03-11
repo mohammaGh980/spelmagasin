@@ -71,5 +71,5 @@ window.onload = startGame;
 
 // pil som går tilbake til hjemmesiden
 function goToHome() {
-    window.location.href = "spelmagasin.html";
+    window.location.href = "index.html";
 }

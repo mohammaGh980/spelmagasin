@@ -1,7 +1,7 @@
 // Funksjon for å gå til hjemmesiden
 function goToHome() {
   // Setter vinduslokasjonen til hjemmesiden for colorcodegame
-  window.location.href = "spelmagasin.html";
+  window.location.href = "index.html";
 }
 
 // Lagrer kommentarer i local storage

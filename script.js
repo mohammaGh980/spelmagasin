@@ -98,7 +98,7 @@ function checkGuess() {
 
 // Funksjon for å gå tilbake til hjemmesiden
 function goToHome() {
-  window.location.href = "spelmagasin.html";
+  window.location.href = "index.html";
 }
 
 //"ProgProQuiz"
